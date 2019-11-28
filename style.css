@@ -1,3 +1,9 @@
+:root { /*i got this colour palette from https://www.materialpalette.com/pink/grey*/
+    --accent: #F8BBD0;
+    --dark: #C2185B;
+    --light: #EBF5EE;
+    --border: 5px solid var(--accent);
+}
 nav{
     text-align: center;
     display: flex;
@@ -23,7 +29,7 @@ li {
     float:left;
     margin-right: 0px;
     border-right: 5px solid
-     #F8BBD0; /* I found this colour palette from https://www.materialpalette.com/pink/grey*/
+    var(--dark); 
     padding: 0 20px;
 }
 
@@ -41,5 +47,5 @@ li a {
 }
 
 li a:hover {
-    color: #C2185B; /* I found this colour palette from https://www.materialpalette.com/pink/grey*/
+    color: var(--accent);
 }
