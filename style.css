@@ -1,8 +1,11 @@
 :root { /*i got this colour palette from https://www.materialpalette.com/pink/grey*/
-    --accent: #F8BBD0;
+    --divider: #BDBDBD;
+    --primary: #E91E63;
     --dark: #C2185B;
-    --light: #EBF5EE;
-    --border: 5px solid var(--accent);
+    --light: #F8BBD0;
+    --accent:#9E9E9E;
+    --text: #212121;
+    --border: 5px solid var(--divider);
 }
 nav{
     text-align: center;
@@ -29,7 +32,7 @@ li {
     float:left;
     margin-right: 0px;
     border-right: 5px solid
-    var(--dark); 
+    var(--divider); 
     padding: 0 20px;
 }
 
@@ -48,4 +51,29 @@ li a {
 
 li a:hover {
     color: var(--accent);
+}
+
+.selfie {
+    height: 350px;
+    border-style: none;
+    border-radius: 100%; 
+    filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
+}
+.selfie:hover {
+    filter: drop-shadow(16px 16px 20px var(--accent));; 
+    border-style: none;
+    border-radius: 100%;
+    transition: background-size 1.5s ease;
+    filter: drop-shadow(16px 16px 20px var(--accent));;
+    transition: background-size 0.3s ease; 
+
+}
+body {
+    text-align: center;
+    
+
+}
+
+.container {
+    text-align: center;
 }
