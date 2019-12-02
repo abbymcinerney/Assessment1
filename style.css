@@ -1,3 +1,7 @@
+*{
+    box-sizing:border-box
+  }
+
 :root { /*i got this colour palette from https://www.materialpalette.com/pink/grey*/
     --divider: #BDBDBD;
     --primary: #E91E63;
@@ -7,11 +11,24 @@
     --text: #212121;
     --border: 5px solid var(--divider);
 }
+
+.Home{ /* I got this styling from https://codepen.io/miquel/pen/KVXBRQ*/
+    margin: 0;
+    padding: 0;
+    height: auto;
+    padding-bottom:80px;
+    background: var(--primary);
+    background-size:cover;
+    color:var(--text);
+    overflow:hidden;
+}
+
 nav{
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: var(--text);
 }
 *{
     margin: 0;
@@ -31,9 +48,9 @@ li {
     height:25px;
     float:left;
     margin-right: 0px;
-    border-right: 5px solid
+    border-right: 3px solid
     var(--divider); 
-    padding: 0 20px;
+    padding: 0 9px;
 }
 
 li:last-child {
@@ -50,6 +67,8 @@ li a {
 }
 
 li a:hover {
+    /*text-shadow: 2px 2px var(--accent); /* I got this hover feature from: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp*/
+    filter: drop-shadow(16px 16px 25px var(--accent));; 
     color: var(--accent);
 }
 
@@ -58,12 +77,15 @@ li a:hover {
     border-style: none;
     border-radius: 100%; 
     filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
+    filter: grayscale(0);
 }
 .selfie:hover {
+    filter: grayscale(1);
     filter: drop-shadow(16px 16px 20px var(--accent));; 
     border-style: none;
     border-radius: 100%;
-    transition: background-size 1.5s ease;
+    transition: background-size 0.3s ease;
+    filter: grayscale(1);
     filter: drop-shadow(16px 16px 20px var(--accent));;
     transition: background-size 0.3s ease; 
 
