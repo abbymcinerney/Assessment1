@@ -14,14 +14,18 @@
 }
 
 .Home{ /* I got this styling from https://codepen.io/miquel/pen/KVXBRQ*/
-    margin: 0;
-    padding: 0;
+    text-align:center;
+    position:relative;
     height: auto;
     padding-bottom:80px;
-    background: var(--light);
+    background: var(--primary);
     background-size:cover;
-    color:var(--text);
+    color:var(--text2);
     overflow:hidden;
+}
+h1{ /* I got this styling from https://codepen.io/miquel/pen/KVXBRQ*/
+    margin:50px 0 20px;
+    font-size:35px;
 }
 
 nav{
@@ -29,7 +33,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: var(--text);
+    color: var(--text1);
 }
 *{
     margin: 0;
@@ -61,7 +65,7 @@ li:last-child {
 li a {
     text-decoration: none;
     text-align: center;
-    color: rgb(15, 15, 15);
+    color: var(--text1);
     font: 25px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
     transition: all 0.5 ease;
