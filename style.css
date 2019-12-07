@@ -1,7 +1,10 @@
 *{
-    box-sizing:border-box
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
   }
 
+  /*colour*/
 :root { /*i got this colour palette from https://www.materialpalette.com/pink/grey*/
     --divider: #BDBDBD;
     --primary: #E91E63;
@@ -13,6 +16,7 @@
     --border: 5px solid var(--divider);
 }
 
+/*COLOUR BLOCK */
 .Home{ /* I got this styling from https://codepen.io/miquel/pen/KVXBRQ*/
     text-align:center;
     position:relative;
@@ -28,20 +32,18 @@ h1{ /* I got this styling from https://codepen.io/miquel/pen/KVXBRQ*/
     font-size:35px;
 }
 
-nav{
+.container {
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: var(--text1);
-}
-*{
-    margin: 0;
-    padding: 0;
 }
 
-nav {
-    margin:50px;
+/*navigation*/ /* i used the styling of this websites navigation bar https://codepen.io/jakestuts/full/eyvrx as inspiration for my navigation bar*/
+nav{
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: var(--text1);
 }
 
 ul {
@@ -50,12 +52,12 @@ ul {
 }
 
 li {
-    height:25px;
+    height:15px;
     float:left;
     margin-right: 0px;
     border-right: 3px solid
     var(--divider); 
-    padding: 0 9px;
+    padding: 0 15px;
 }
 
 li:last-child {
@@ -66,7 +68,7 @@ li a {
     text-decoration: none;
     text-align: center;
     color: var(--text1);
-    font: 25px/1 Helvetica, Verdana, sans-serif;
+    font: 15px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
     transition: all 0.5 ease;
 }
@@ -78,7 +80,7 @@ li a:hover {
 }
 
 .selfie {
-    height: 350px;
+    height: 200px;
     border-style: none;
     border-radius: 100%; 
     filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
@@ -101,6 +103,44 @@ body {
 
 }
 
-.container {
-    text-align: center;
+/*GRID
+.gallery-item {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
 }
+
+.gallery {/*this puts the images into a grid
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1.5rem;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.gallery-item:hover {
+    box-shadow: 0 10px 20px palevioletred;
+}
+.selfie {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+
+@media (max-width: 500px) { 
+    .gallery-item, /*this is code that styles the grid
+    body {
+        max-width: 30%;
+        grid-column: 2;
+        font-family: Oswald, sans-serif;
+        text-align: left;
+    }
+    div.portfolio, h1 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    div.text {
+        font-size: 2.5em;
+    }
+} */
