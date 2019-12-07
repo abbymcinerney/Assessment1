@@ -86,7 +86,7 @@ li a:hover {
     filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
     filter: grayscale(0);
 }
-.selfie:hover {
+.selfie1:hover {
     filter: grayscale(1);
     filter: drop-shadow(16px 16px 20px var(--accent));; 
     border-style: none;
@@ -97,11 +97,70 @@ li a:hover {
     transition: background-size 0.3s ease; 
 
 }
+
+.selfie2:hover {
+    filter: grayscale(1);
+    filter: drop-shadow(16px 16px 20px var(--accent));; 
+    border-style: none;
+    border-radius: 100%;
+    transition: background-size 0.3s ease;
+    filter: grayscale(1);
+    filter: drop-shadow(16px 16px 20px var(--accent));;
+    transition: background-size 0.3s ease; 
+
+}
+
+.selfie3:hover {
+    filter: grayscale(1);
+    filter: drop-shadow(16px 16px 20px var(--accent));; 
+    border-style: none;
+    border-radius: 100%;
+    transition: background-size 0.3s ease;
+    filter: grayscale(1);
+    filter: drop-shadow(16px 16px 20px var(--accent));;
+    transition: background-size 0.3s ease; 
+
+}
+.selfie1{
+    height: 300px;
+    border-style: none;
+    border-radius: 100%; 
+    filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
+    filter: grayscale(0);
+    position: absolute;
+    top: 75px;
+    left: 5%;
+}
+
+.selfie2 {
+    height: 300px;
+    border-style: none;
+    border-radius: 100%; 
+    filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
+    filter: grayscale(0);
+    position: absolute;
+    top: 75px;
+    
+}
+
+.selfie3 {
+    height: 300px;
+    border-style: none;
+    border-radius: 100%; 
+    filter: drop-shadow(0);; /* The drop shadow filter i found on this website https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/
+    filter: grayscale(0);
+    position: absolute;
+    top: 75px;
+    right: 5%;
+
+}
 body {
     text-align: center;
     
 
 }
+
+
 
 /*GRID
 .gallery-item {
