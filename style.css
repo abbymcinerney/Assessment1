@@ -88,3 +88,36 @@ footer {
     bottom: 10px; /* i got this line of code from https://www.w3schools.com/cssref/pr_pos_bottom.asp*/
     left: 50%;
 }
+
+.profile{
+    margin: 10px;
+    height: 350px;
+}
+
+/*grid*/
+
+/*i got the code for the grid from assignment 0*/
+
+.container {
+    width: 96rem;
+    margin: 2rem auto;
+}
+.box-item {
+    margin: 10px;
+    height: 350px;
+    border-radius: 5px;
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+}
+
+.boxes{/*this puts the images into a grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10rem;
+
+}
