@@ -13,7 +13,7 @@
     --accent:#9E9E9E;
     --text1: #212121;
     --text2:#FFFFFF;
-    --border: 5px solid var(--divider);
+    --border: 5px solid var(--primary);
 }
 
 /*COLOUR BLOCK */
@@ -68,10 +68,10 @@ li a {
     font: 15px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
     transition: all 0.5 ease;
+    filter: drop-shadow(0);;
 }
 
 li a:hover {
-    /*text-shadow: 2px 2px var(--accent); /* I got this hover feature from: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp*/
     filter: drop-shadow(16px 16px 25px var(--accent));; 
     color: var(--accent);
 }
@@ -120,4 +120,17 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10rem;
 
+}
+
+p{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.table {
+    height: 350px;
+    border: var(--border);
 }
