@@ -21,28 +21,25 @@
     text-align:center;
     position:relative;
     height: auto;
-    padding-bottom:80px;
+    padding-bottom:60px;
     background: var(--primary);
     background-size:cover;
     color:var(--text2);
     overflow:hidden;
 }
 h1{ /* I got this styling from https://codepen.io/miquel/pen/KVXBRQ*/
-    margin:50px 0 20px;
+    margin:30px 0 10px;
     font-size:35px;
 }
 
-.container {
-    text-align: center;
-}
 
 /*navigation*/ /* i used the styling of this websites navigation bar https://codepen.io/jakestuts/full/eyvrx as inspiration for my navigation bar*/
 nav{
     margin: 10px;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     color: var(--text1);
 }
 
@@ -86,46 +83,8 @@ body {
 
 }
 
-
-
-/*GRID
-.gallery-item {
-    max-width: 100%;
-    border-radius: 5px;
-    transition: all .3s;
-    overflow: hidden;
-    position: relative;
+footer { 
+    position: absolute;
+    bottom: 10px; /* i got this line of code from https://www.w3schools.com/cssref/pr_pos_bottom.asp*/
+    left: 50%;
 }
-
-.gallery {/*this puts the images into a grid
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 1.5rem;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-.gallery-item:hover {
-    box-shadow: 0 10px 20px palevioletred;
-}
-.selfie {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-
-@media (max-width: 500px) { 
-    .gallery-item, /*this is code that styles the grid
-    body {
-        max-width: 30%;
-        grid-column: 2;
-        font-family: Oswald, sans-serif;
-        text-align: left;
-    }
-    div.portfolio, h1 {
-        text-align: left;
-        margin-left: 2em;
-    }
-
-    div.text {
-        font-size: 2.5em;
-    }
-} */
