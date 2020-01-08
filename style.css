@@ -94,7 +94,7 @@ footer {
     height: 350px;
 }
 
-/*grid*/
+/* home page grid*/
 
 /*i got the code for the grid from assignment 0*/
 
@@ -148,22 +148,38 @@ p{
 
 
 /*portfolio grid*/
+:root {
+    font-size: 75.5%;
+    font-family: Montserrat, sans-serif;
+}
+
 
 .album-item {
-    margin: 10px;
-    height: 350px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px var(--light);
+    transition: all .3s;
     overflow: hidden;
     position: relative;
 }
 
-.album {
+.album {/*this puts the images into a grid*/
     display: grid;
     grid-template-columns: repeat(auto-fit, 
     minmax(300px, 1fr));
     grid-gap: 1.5rem;
-    grid-auto-rows: minmax(150px, auto);
+    
 }
 
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
 /* contact me*/
 /*code from https://codepen.io/Chitransh_Harshwal/pen/bjjwep*/
 .container2 {
