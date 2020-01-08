@@ -193,7 +193,7 @@ p{
 /*code from https://codepen.io/Chitransh_Harshwal/pen/bjjwep*/
 .container2 {
     border-radius: 5px; 
-    background-color: var(--light);
+   
     padding: 2px;  
     text-align: center;
 }
@@ -217,15 +217,16 @@ p{
     border: hidden;
     font-size: 18px;
     font-family: calibri;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid var(--light);
     outline: none;
     box-sizing: border-box;
     resize: vertical;
+    
   }
   
   input:focus {
     font-style: italic;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--primary);
   }
   
   textarea{
@@ -235,7 +236,7 @@ p{
     border: hidden;
     font-size: 18px;
     font-family: calibri;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid var(--light);
     outline: none;
     height: 100px;
     resize: none;
@@ -243,27 +244,27 @@ p{
   
   textarea:focus  {
     font-style: italic;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--primary);
   }
   
   input[type=submit] {
-    border: 2px solid grey;
+    border: 2px solid var(--primary);
     padding: 12px 12px 10px 12px;
     font-size: 18px;
     font-family: calibri;
-    background-color: white;
+    background-color: var(--text2);
     font-weight: 700;
     float: right;
-    color: grey;
+    color: var(--primary);
     text-transform: uppercase;
     transition: all 0.35s ease-in-out;
   }
   
   input[type=submit]:hover {
-    color: black;
+    color: var(--dark);
     padding: 12px 56px 10px 56px;
     outline: none;
-    border: 2px solid black;
+    border: 2px solid var(--dark);
     letter-spacing: 0px;
     
   }
