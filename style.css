@@ -70,8 +70,7 @@ li a {
     color: var(--text1);
     font: 20px/1 Helvetica, Verdana, sans-serif;
     text-transform: uppercase;
-    transition: all 3.ms ease;
-    
+
 }
 
 li a:hover {
