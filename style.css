@@ -81,12 +81,15 @@ li a:hover {
 
 body {
     text-align: center;
-    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 footer { 
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px; /* i got this line of code from https://www.w3schools.com/cssref/pr_pos_bottom.asp*/
     left: 50%;
 }
