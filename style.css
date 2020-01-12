@@ -88,7 +88,6 @@ body {
 }
 
 footer { 
-    /* position: absolute; */
     bottom: 10px; /* i got this line of code from https://www.w3schools.com/cssref/pr_pos_bottom.asp*/
     left: 50%;
 }
@@ -107,9 +106,9 @@ footer {
     margin: 2rem auto;
 }
 .box-item {
-    margin: 10px;
-    height: 350px;
+    max-width: 100%;
     border-radius: 5px;
+    box-shadow: 0 5px 20px var(--light);
     transition: all .3s;
     overflow: hidden;
     position: relative;
@@ -121,10 +120,10 @@ h2{
 
 .boxes{/*this puts the images into a grid*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    align-items: center;
-
+    grid-template-columns: repeat(auto-fit, 
+    minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    
 }
 
 /*text boxes*/
